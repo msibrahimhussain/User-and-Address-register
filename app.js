@@ -36,7 +36,7 @@ const initializeDbAndServer = async () => {
 
 initializeDbAndServer();
 
-app.post("register/", async (request, response) => {
+app.post("/register/", async (request, response) => {
   const { name, address } = request.body;
   const postUserQuery = `
   INSERT INTO
